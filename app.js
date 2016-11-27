@@ -22,8 +22,8 @@ app.get('/', function(req, res, next) {
 });
 
 app.use(webpackDevMiddleware(compiler, {
-    publicPath: config.output.publicPath,
-    stats: { colors: true }
+  publicPath: config.output.publicPath,
+  stats: { colors: true }
 }));
 
 app.use(webpackHotMiddleware(compiler));
