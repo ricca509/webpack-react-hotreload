@@ -7,12 +7,12 @@ module.exports = {
     './public/javascripts/index.js'
   ],
   output: {
-		path: '/',
-		publicPath: "http://localhost:3000/dist/", // relative path for github pages
-		filename: "all.app.js", // no hash in main.js because index.html is a static page
-	},
+    path: '/',
+    publicPath: "/dist/", // relative path for github pages
+    filename: "all.app.js", // no hash in main.js because index.html is a static page
+  },
   module: {
-		loaders: [
+    loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
     ]
   },
