@@ -4,7 +4,7 @@ module.exports = {
   entry: [
     'webpack/hot/dev-server',
     'webpack-hot-middleware/client',
-    './public/javascripts/index.js'
+    './src/client/index.js'
   ],
   output: {
     path: '/',
