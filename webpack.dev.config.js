@@ -11,8 +11,8 @@ module.exports = {
     publicPath: "/dist/", // relative path for github pages
     filename: "all.app.js", // no hash in main.js because index.html is a static page
   },
-  rules: {
-    loaders: [
+  module: {
+    rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
     ]
   },
